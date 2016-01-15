@@ -1,9 +1,9 @@
 {
     "appTitle": "Data Di Nascita",
-    "url": "http://www.miniportale.com/m/t/en.htm",
+    "url": "http://www.tarotfree.biz/en/",
     "urlCrossOrigin": "",
     "skipAjaxCheck": false,
-    "customScript": "",
+    "customScript": "modules/custom/src/custom.js",
     "loadType": "iframe",
     "iframeTarget": "body",
     "evalPostMessage": false
