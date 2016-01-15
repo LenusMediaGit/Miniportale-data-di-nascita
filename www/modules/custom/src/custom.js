@@ -10,7 +10,7 @@ function dateOfBirth() {
     if (langs.indexOf(l) < 0)
         l = "en";
 
-    var url = "http://www.tarotfree.biz/" + l + "/";
+    var url = "http://www.tarotfree.biz/d/" + l + "/";
 
     appFramework.setConf("url", url);
 
