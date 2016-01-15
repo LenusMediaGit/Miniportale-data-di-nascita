@@ -1,0 +1,10 @@
+{
+    "appTitle": "Data Di Nascita",
+    "url": "http://www.miniportale.com/m/t/en.htm",
+    "urlCrossOrigin": "",
+    "skipAjaxCheck": false,
+    "customScript": "",
+    "loadType": "iframe",
+    "iframeTarget": "body",
+    "evalPostMessage": false
+}
