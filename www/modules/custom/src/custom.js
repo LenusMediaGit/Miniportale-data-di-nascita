@@ -4,7 +4,7 @@ function dateOfBirth() {
     l = l.split("-");
     l = (l[0]).toLowerCase();
 
-    var langs = ["ru", "pt", "it", "fr", "es", "en", "de"];
+    var langs = ["tr", "pt", "it", "fr", "es", "en", "de"];
 
     // if language is not supported, then fallback to english
     if (langs.indexOf(l) < 0)
