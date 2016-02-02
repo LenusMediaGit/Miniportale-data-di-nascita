@@ -14,7 +14,27 @@ function dateOfBirth() {
 
     appFramework.setConf("url", url);
 
-    appFramework.loadExternal();
+    var Paths = {};
+    Paths.URL_ROOT = AppFramework.URL_MODULES + "custom/";
+    Paths.URL_SRC = Paths.URL_ROOT + "src/";
+    Paths.URL_DATA = Paths.URL_ROOT + "data/";
+    Paths.URL_TEMPLATE = Paths.URL_SRC + "template/";
+    Paths.URL_CSS = Paths.URL_TEMPLATE + "css/";
+
+    jQuery('head').append('<link rel="stylesheet" type="text/css" href="' + Paths.URL_CSS + 'style.css">');
+
+    jQuery("#wrapper").load(Paths.URL_TEMPLATE + "wrapper.html", function () {
+        jQuery("#logo").attr("src", Paths.URL_DATA + "img/logo.png");
+
+        appFramework.loadExternal({
+            onReady: function () {
+                var iframe = jQuery("#iframe-wrapper");
+                iframe.fadeIn(1000, function () {
+                    jQuery("#wrapper").replaceWith(iframe);
+                });
+            }
+        });
+    });
 }
 
 dateOfBirth();

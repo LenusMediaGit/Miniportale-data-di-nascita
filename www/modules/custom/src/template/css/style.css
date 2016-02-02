@@ -1,0 +1,39 @@
+body {
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    width: 30%;
+}
+
+html, body, #wrapper-table {
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*
+#wrapper-table {
+    background-color: rgb(201, 201, 255);
+}
+*/
+
+#wrapper-table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#iframe-wrapper {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:none;
+}
