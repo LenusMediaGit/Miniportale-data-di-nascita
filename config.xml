@@ -8,6 +8,7 @@
         Lenus.it
     </author>
     <icon src="icon.png" />
+    <content src="src/main.html" />
     <icon gap:platform="winphone" src="icon.png" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
